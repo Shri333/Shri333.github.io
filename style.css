@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+nav {
+  position: fixed;
+  background: white;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  clear: right;
+  z-index: 1;
+}
+
+#home {
+  color: black;
+  font-size: 35px;
+  line-height: 100px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#home:hover {
+  background: white;
+}
+
+#about {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+#about:hover {
+  background: transparent;
+}
+
+#contact_ {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+#contact_:hover {
+  background: transparent;
+}
+
+ul {
+  visibility: visible;
+  float: right;
+  margin-right: 20px;
+}
+
+li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 10px;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+  padding: 10.5px 19.5px;
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+
+a:hover,
+a.selected {
+  background: #eeeeee;
+  transition: 0.2s;
+}
+
+button {
+  visibility: hidden;
+}
+
+.coding {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(40%);
+}
+
+.hello {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.header {
+  font-size: 150px;
+}
+
+.text {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.text_ {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.empty {
+  width: 100vw;
+  height: 100px;
+}
+
+.profile {
+  display: block;
+  margin: 50px auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  button {
+    visibility: visible;
+    float: right;
+    width: 36px;
+    height: 30px;
+    margin: 35px 0;
+    margin-right: 35px;
+    background: url("menu.png");
+    background-size: cover;
+    outline: none;
+    border: none;
+    transition: all 0.15s ease-in;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  ul {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    background: white;
+    text-align: center;
+  }
+
+  li {
+    display: block;
+  }
+
+  a,
+  a.selected {
+    padding: 14px 26px;
+    transition: 0s;
+  }
+
+  .header {
+    font-size: 90px;
+  }
+
+  .text {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  .text_ {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  #about {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: lowercase;
+  }
+
+  #contact_ {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: lowercase;
+  }
+}
